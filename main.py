@@ -9,6 +9,7 @@ root.title("Currency Converter")
 # if you want transparent window, uncomment the line below
 root.attributes('-alpha',0.9)
 
+# you can edit currency list as you like
 currencies = ['CNY', 'EUR', 'GBP', 'INR', 'JPY', 'RUB', 'TRY', 'USD']
 result_label = None
 
