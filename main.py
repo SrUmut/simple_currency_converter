@@ -20,7 +20,7 @@ def convert():
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={to.get()}&from={base.get()}&amount={amount.get()}"
 
         payload = {}
-        headers = {"apikey": "TBlYlSeBbnU9yK428YL6lZj1PdU0R2xn"}
+        headers = {"apikey": [API_KEY]}
 
         response = requests.request("GET", url, headers=headers, data = payload)
         result = response.json()["result"]
